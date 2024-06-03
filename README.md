@@ -4,7 +4,7 @@
 
 Hide Code improves code readability, blurring sections that do not affect the logic, but are necessary, such as logs, metrics, among others. It can be activated and deactivated with a single click, allowing you to decide when you want to focus only on logical sections.
 
-![Hide Code screenshot](./assets/example.gif)
+![Hide Code screenshot](https://github.com/LucasBermann/hide-code/blob/main/assets/example.gif)
 
 ### Settings
 
@@ -51,4 +51,4 @@ This extension is inspired by [hide-comments](https://github.com/estruyf/vscode-
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/LucasBermann/hide-code/blob/main/LICENSE).
