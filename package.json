@@ -6,6 +6,7 @@
   "version": "0.1.1",
   "preview": false,
   "icon": "assets/hide-code.png",
+  "repository": "https://github.com/LucasBermann/hide-code",
   "keywords": [
     "hide",
     "ocult",
