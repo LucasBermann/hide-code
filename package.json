@@ -3,7 +3,7 @@
   "displayName": "hide code",
   "description": "This extension aims to hide and/or blur snippets of code according to the regex defined in the settings (logs, for example). Aiming to only worry about codes that influence logic.",
   "publisher": "LucasBermann",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "preview": false,
   "icon": "assets/hide-code.png",
   "repository": "https://github.com/LucasBermann/hide-code",
