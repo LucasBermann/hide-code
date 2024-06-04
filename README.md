@@ -4,7 +4,7 @@
 
 Hide Code improves code readability, blurring sections that do not affect the logic, but are necessary, such as logs, metrics, among others. It can be activated and deactivated with a single click, allowing you to decide when you want to focus only on logical sections.
 
-![Hide Code screenshot](https://github.com/LucasBermann/hide-code/blob/main/assets/example.gif)
+![Hide Code screenshot](https://raw.githubusercontent.com/LucasBermann/hide-code/main/assets/example.gif)
 
 ### Settings
 
