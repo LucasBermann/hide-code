@@ -17,7 +17,6 @@ export const STATE_KEYS = {
 
 export async function activate(context: vscode.ExtensionContext) {
   const state = new State(context);
-
   const { subscriptions } = context;
 
   hideCode(state);
