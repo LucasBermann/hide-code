@@ -1,9 +1,9 @@
 {
   "name": "hide-code",
-  "displayName": "hide code",
+  "displayName": "Hide Code",
   "description": "This extension aims to hide and/or blur snippets of code according to the regex defined in the settings (logs, for example). Aiming to only worry about codes that influence logic.",
   "publisher": "LucasBermann",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "preview": false,
   "icon": "assets/hide-code.png",
   "repository": "https://github.com/LucasBermann/hide-code",
@@ -71,14 +71,25 @@
     "commands": [
       {
         "command": "hidecode.regex.hide",
-        "title": "Hide Code: Hide lines",
+        "title": "Hide Code: Hide lines (Ctrl+Alt+h)",
         "icon": "$(regex)"
       },
       {
         "command": "hidecode.regex.show",
-        "title": "Hide Code: Show lines",
+        "title": "Hide Code: Show lines (Ctrl+Alt+h)",
         "icon": "$(file-code)"
+      },
+      {
+        "command": "hidecode.regex.toggle",
+        "title": "Hide Code: Toggle"
       }
+    ],
+    "keybindings": [
+        {
+            "command": "hidecode.regex.toggle",
+            "key": "ctrl+alt+h",
+            "when": "editorTextFocus"
+        }
     ],
     "menus": {
       "editor/title": [
@@ -100,6 +111,10 @@
         },
         {
           "command": "hidecode.regex.show",
+          "when": "hideCode.regexEnabled == true"
+        },
+        {
+          "command": "hidecode.regex.toggle",
           "when": "hideCode.regexEnabled == true"
         }
       ]
