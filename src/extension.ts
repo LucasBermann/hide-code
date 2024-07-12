@@ -36,6 +36,18 @@ export async function activate(context: vscode.ExtensionContext) {
     }
   );
 
+  const toggleConsoleCmd = vscode.commands.registerCommand(
+    "hidecode.regex.toggle",
+    async () => {
+      const hideLines = await state.getGlobalState<boolean>(StateLabel.HIDDEN);
+      if (hideLines) {
+        hideCode(state);
+        return;
+      }
+      hideCode(state, true);
+    }
+  );
+
   vscode.window.onDidChangeActiveTextEditor(
     async (e) => {
       const hideLines = await state.getGlobalState<boolean>(StateLabel.HIDDEN);
@@ -78,6 +90,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
   subscriptions.push(hideConsoleCmd);
   subscriptions.push(showConsoleCmd);
+  subscriptions.push(toggleConsoleCmd);
 }
 
 export function deactivate() {}
